@@ -1,7 +1,7 @@
 public class ContaEspecial extends ContaCorrente {
 
-    public ContaEspecial(String nome, String cpf, double saldo,double limiteSeque) {
-        super(nome, cpf, saldo);
+    public ContaEspecial(String nome, String cpf, double saldo,double limiteSeque,String numeroConta) {
+        super(nome, cpf, saldo, numeroConta);
         this.limiteSeque = limiteSeque;
         //TODO Auto-generated constructor stub
     }
@@ -16,9 +16,21 @@ public class ContaEspecial extends ContaCorrente {
         return limiteSeque;
     }
 
-    public void valorRetirarSaque(double valor){
+    public void valorRetirarSaqueCheque(double valor){
 
-        
+        double valorRetirarCheque = getSaldo() - valor;
+
+        if(valorRetirarCheque < 0){
+
+
+
+        }else{
+
+
+
+        }
+
+
 
     }
 

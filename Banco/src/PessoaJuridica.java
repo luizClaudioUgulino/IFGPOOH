@@ -1,7 +1,7 @@
 public class PessoaJuridica extends Conta {
     
-    public PessoaJuridica(String nome,String cnpj, double saldo) {
-        super(nome, saldo);
+    public PessoaJuridica(String nome,String cnpj, double saldo,String numeroConta) {
+        super(nome, saldo,  numeroConta);
         //TODO Auto-generated constructor stub
         this.cnpj = cnpj;
     }

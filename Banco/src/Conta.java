@@ -1,12 +1,14 @@
 public class Conta extends Cliente {
     
-    public Conta(String nome, double saldo) {
+    public Conta(String nome, double saldo, String numeroConta) {
         super(nome);
         this.saldo = saldo;
+        this.numeroConta = numeroConta;
         //TODO Auto-generated constructor stub
     }
 
     private double saldo;
+    private String numeroConta;
 
     public void setSaldo(Double saldo) {
         this.saldo = saldo;
