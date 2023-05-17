@@ -1,5 +1,6 @@
 
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -8,6 +9,11 @@ public class App {
         
         Scanner sc = new Scanner(System.in);
         boolean loop = true;
+
+
+        ArrayList<ContaCorrente> Cc = new ArrayList<ContaCorrente>();
+        Cc.add(ContaCorrente("nome","70132006111",1230,"123123"));
+        
 
         while( loop == true){
         Object[] opcoes = {"Acessar", "Criar conta", "Sair"};
