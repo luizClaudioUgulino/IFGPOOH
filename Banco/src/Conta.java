@@ -10,6 +10,14 @@ public class Conta extends Cliente {
     private double saldo;
     private String numeroConta;
 
+    public String getNumeroConta() {
+        return numeroConta;
+    }
+
+    public void setNumeroConta(String numeroConta) {
+        this.numeroConta = numeroConta;
+    }
+
     public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
